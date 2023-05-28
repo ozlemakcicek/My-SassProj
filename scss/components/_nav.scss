@@ -1,0 +1,38 @@
+.nav{
+    // border: 2px solid red;
+
+height: 10vh;
+padding: 1rem;
+&_list{
+    text-align: right;
+}
+&_item{
+    display: inline-block;
+    padding: 1rem;
+}
+
+&_link{
+    font-size: 1rem;
+    text-transform:uppercase ;
+    font-weight: 500;
+   @include transition(0.7s);
+
+   //** bunu mixin de variable olarak tanimladik.burda include yaptik.parantez icine istedigin sn yi yazablrsn
+
+
+&:hover{color: blue;}
+
+
+ &-active{
+        color:orange ;
+    }
+
+}
+   
+
+
+
+
+}
+
+

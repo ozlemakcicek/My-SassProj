@@ -1,0 +1,112 @@
+//*****************************************************
+//*   RESPONSIVE
+//*****************************************************
+
+@include media-xsm {
+    .nav {
+        padding: 0.5rem;
+
+        &_list {
+            text-align: center;
+        }
+
+        &_item {
+            padding-right: 0.7rem;
+        }
+
+        .nav_link {
+            font-size: 0.9rem;
+        }
+    }
+
+    .contact {
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        &_list {
+            gap: 2rem 1.2rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@include media-sm {
+    .nav {
+        padding: 0.4rem;
+
+        &_list {
+            text-align: right;
+        }
+
+        &_item {
+            padding-right: 1rem;
+        }
+
+        .nav_link {
+            font-size: 1rem;
+        }
+        .about_bio-image{
+            margin-top: 1.5rem;
+            p{
+                margin-bottom: 1.5rem;
+            }
+
+        }
+    }
+
+    .contact {
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &_list {
+            gap: 2.5rem 2rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@include media-md {
+    .nav {
+        &_item {
+            padding-right: 1.3rem;
+        }
+
+        .nav_link {
+            font-size: 1.3rem;
+        }
+    }
+
+    .projects_item {
+        width: 100%;
+    }
+}
+
+@include media-lg {
+    .nav {
+        &_item {
+            padding-right: 1.5rem;
+        }
+
+        .nav_link {
+            font-size: 1.5rem;
+        }
+    }
+
+    .projects_item {
+        width: 50%;
+    }
+
+    .contact_list {
+        flex-direction: row;
+    }
+}
+
+@include media-xl {
+    .projects_item {
+        width: 33%;
+    }
+}
